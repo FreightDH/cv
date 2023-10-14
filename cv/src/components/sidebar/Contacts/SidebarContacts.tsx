@@ -1,5 +1,5 @@
 import contactsInfo from './contactsInfo';
-import ContactsItem from './contacts_item/ContactsItem';
+import ContactsItem from './Item/ContactsItem';
 
 const SidebarContacts = () => {
   return (
