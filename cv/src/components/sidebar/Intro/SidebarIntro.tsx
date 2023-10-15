@@ -2,7 +2,7 @@ import styles from './SidebarIntro.module.scss';
 
 const SidebarIntro = ({ src, alt }: Record<string, string>) => {
   return (
-    <div className={styles.sidebar__intro}>
+    <div className={styles.SidebarIntro}>
       <div className={styles.intro__image}>
         <img src={src} alt={alt} />
       </div>
