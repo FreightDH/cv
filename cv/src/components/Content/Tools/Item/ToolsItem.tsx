@@ -9,7 +9,7 @@ type Tool = {
 const ToolsItem = ({ img, tool, text }: Tool) => {
   return (
     <li className={styles.tools__item}>
-      <div className={styles.tools__img}>
+      <div className="icon">
         <img src={img.src} alt={img.alt} />
       </div>
       <div>
