@@ -1,0 +1,34 @@
+.tools {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__img {
+    padding: 5px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__tool {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 5px 0px 0px 0px;
+
+    color: #81878c;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
