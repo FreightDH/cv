@@ -3,8 +3,8 @@ import languagesInfo from './languagesInfo';
 
 const SidebarLanguages = () => {
   return (
-    <div className="sidebar__languages">
-      <ul className="languages__list">
+    <div>
+      <ul>
         {languagesInfo.map((item) => (
           <LanguagesItem {...item} key={Math.random().toString()} />
         ))}

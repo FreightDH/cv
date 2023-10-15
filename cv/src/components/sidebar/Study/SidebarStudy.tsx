@@ -3,8 +3,8 @@ import StudyItem from './Item/StudyItem';
 
 const SidebarStudy = () => {
   return (
-    <div className="sidebar__study">
-      <ul className="study__list">
+    <div>
+      <ul>
         {studyInfo.map((item) => (
           <StudyItem {...item} key={Math.random().toString()} />
         ))}

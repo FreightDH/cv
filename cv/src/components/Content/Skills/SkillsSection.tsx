@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section className="skills">
       <ContentTitle>Soft skills</ContentTitle>
-      <div className="skills__content content--content">
+      <div className="content--content">
         <ul className="skills__list">
           {skillsInfo.map((skill) => (
             <SkillsItem text={skill} />
