@@ -4,13 +4,13 @@ import Divider from './Divider/Divider';
 import SidebarIntro from './Intro/SidebarIntro';
 import SidebarLanguages from './Languages/SidebarLanguages';
 import SidebarStudy from './Study/SidebarStudy';
-import styles from './Sidebar.module.scss';
+import './Sidebar.scss';
 
 const profileImage = { src: `${imgPath}photo.jpg`, alt: 'my-photo' };
 
 const Sidebar = () => {
   return (
-    <aside className={styles.sidebar}>
+    <aside className="sidebar">
       <SidebarIntro {...profileImage} />
       <Divider />
       <SidebarContacts />
