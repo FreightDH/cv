@@ -5,7 +5,7 @@ import './ToolsSection.scss';
 
 const Tools = () => {
   return (
-    <section className="tools">
+    <section className="section">
       <ContentTitle>Tools</ContentTitle>
       <div className="content--content">
         <ul className="tools__list">
