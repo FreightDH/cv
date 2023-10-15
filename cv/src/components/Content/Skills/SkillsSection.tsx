@@ -10,7 +10,7 @@ const Skills = () => {
       <div className="content--content">
         <ul className="skills__list">
           {skillsInfo.map((skill) => (
-            <SkillsItem text={skill} />
+            <SkillsItem text={skill} key={Math.random().toString()} />
           ))}
         </ul>
       </div>

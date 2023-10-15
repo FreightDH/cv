@@ -10,7 +10,7 @@ const Tools = () => {
       <div className="content--content">
         <ul className="tools__list">
           {toolsInfo.map((tool) => (
-            <ToolsItem {...tool} />
+            <ToolsItem {...tool} key={Math.random().toString()} />
           ))}
         </ul>
       </div>
