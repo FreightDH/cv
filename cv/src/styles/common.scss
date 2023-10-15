@@ -1,0 +1,17 @@
+// Общие стили
+.title--content {
+  padding: 0px 0px 0px 20px;
+  background: url('../../public/assets/icons/arrow.svg') -5px 0 / 18px 18px no-repeat;
+
+  color: #373b3f;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.content--content {
+  margin: 10px 0px 0px 0px;
+  padding: 15px 20px;
+
+  background-color: rgba($color: #e6e8f1, $alpha: 0.2);
+  border-radius: 10px;
+}
