@@ -14,7 +14,7 @@ const ExperienceItem = ({ img, post, place, time, type, description }: Experienc
     <li className={styles.experience__item}>
       <div className={styles.experience__body}>
         <div className={styles.experience__company}>
-          <div className="company__icon icon contain">
+          <div className="company__icon icon exp">
             <img src={img.src} alt={img.alt} />
           </div>
           <div className={styles.company__info}>

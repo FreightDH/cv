@@ -83,6 +83,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     gap: 5px;
+
+    @media (max-width: 479.98px) {
+      gap: 0;
+    }
   }
 }
 
@@ -92,8 +96,8 @@
     font-size: 12px;
     font-weight: 600;
 
-    @media (max-width: 480px) {
-      font-size: 11px;
+    @media (max-width: 479.98px) {
+      font-size: 10px;
     }
   }
 
@@ -102,8 +106,8 @@
     font-size: 12px;
     font-weight: 500;
 
-    @media (max-width: 480px) {
-      font-size: 11px;
+    @media (max-width: 479.98px) {
+      font-size: 10px;
     }
   }
 }
@@ -120,7 +124,7 @@
     background-color: #f7f3ed;
     border-radius: 3px;
 
-    @media (max-width: 480px) {
+    @media (max-width: 479.98px) {
       font-size: 10px;
     }
   }
@@ -130,7 +134,7 @@
     font-size: 11px;
     text-align: right;
 
-    @media (max-width: 480px) {
+    @media (max-width: 479.98px) {
       font-size: 10px;
     }
   }

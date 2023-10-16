@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <section className="section experience">
       <ContentTitle>Experience</ContentTitle>
-      <div className="">
+      <div>
         <ul>
           {experienceInfo.map((item) => (
             <ExperienceItem {...item} key={Math.random().toString()} />

@@ -40,9 +40,14 @@
     object-fit: cover;
   }
 
-  &.contain {
+  &.exp {
     img {
       object-fit: contain;
+    }
+
+    @media (max-width: 479.98px) {
+      width: 30px;
+      height: 30px;
     }
   }
 }
