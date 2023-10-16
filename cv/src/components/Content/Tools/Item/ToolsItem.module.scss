@@ -1,0 +1,20 @@
+.tools {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__tool {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 5px 0px 0px 0px;
+
+    color: #81878c;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}

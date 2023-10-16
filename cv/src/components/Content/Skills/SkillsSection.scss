@@ -1,0 +1,21 @@
+.skills {
+  &__content {
+    padding: 15px 25px 15px 32px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+
+    @media (max-width: 630px) {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.study {
+  &__item {
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: #373b3f;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  &__text {
+    padding: 7px 0px;
+
+    color: #52575c;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__level {
+    color: #81878c;
+    font-size: 11px;
+  }
+}

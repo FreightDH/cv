@@ -1,0 +1,7 @@
+.study {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
