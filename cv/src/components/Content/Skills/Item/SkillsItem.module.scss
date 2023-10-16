@@ -14,4 +14,8 @@
     background-color: #81878c;
     border-radius: 50%;
   }
+
+  @media (max-width: 630px) {
+    flex: 0 0 45%;
+  }
 }

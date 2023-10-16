@@ -4,5 +4,9 @@
     font-size: 15px;
     line-height: 150%;
     text-align: justify;
+
+    @media (max-width: 767.98px) {
+      font-size: 13px;
+    }
   }
 }
