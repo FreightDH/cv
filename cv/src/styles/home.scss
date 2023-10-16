@@ -6,9 +6,17 @@
 
   &__body {
     padding: 30px 20px 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    background-color: #fff;
+  }
+
+  &__info {
     display: flex;
     gap: 20px;
-    background-color: #fff;
 
     @media (max-width: 900px) {
       flex-direction: column;
