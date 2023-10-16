@@ -21,6 +21,11 @@
     &:not(:last-child) {
       margin: 0px 0px 5px 0px;
     }
+
+    @media (max-width: 630px) {
+      padding: 10px;
+      justify-content: center;
+    }
   }
 
   &__body {
@@ -39,6 +44,14 @@
       right: -8px;
       background-color: rgb(230, 232, 241);
     }
+
+    @media (max-width: 630px) {
+      flex: 1 1 auto;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
   &__company {
@@ -51,6 +64,10 @@
 
     font-size: 13px;
     line-height: 130%;
+
+    @media (max-width: 630px) {
+      display: none;
+    }
   }
 
   &__time {
@@ -74,12 +91,20 @@
     color: #81878c;
     font-size: 12px;
     font-weight: 600;
+
+    @media (max-width: 480px) {
+      font-size: 11px;
+    }
   }
 
   &__place {
     color: #373b3f;
     font-size: 12px;
     font-weight: 500;
+
+    @media (max-width: 480px) {
+      font-size: 11px;
+    }
   }
 }
 
@@ -94,11 +119,19 @@
 
     background-color: #f7f3ed;
     border-radius: 3px;
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
   }
 
   &__type {
     color: #81878c;
     font-size: 11px;
     text-align: right;
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
   }
 }

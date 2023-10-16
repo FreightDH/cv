@@ -7,11 +7,15 @@
 
 .title--content {
   padding: 0px 0px 0px 20px;
-  background: url('../../public/assets/icons/arrow.svg') -5px 0 / 18px 18px no-repeat;
+  background: url('../../public/assets/icons/arrow.svg') -5px 0px / 18px 18px no-repeat;
 
   color: #373b3f;
   font-size: 17px;
   font-weight: 600;
+
+  @include adaptiveValue('font-size', 17, 14);
+  @include adaptiveValue('background-position-x', -5, 3);
+  @include adaptiveValue('background-position-y', 0, -2);
 }
 
 .content--content {
