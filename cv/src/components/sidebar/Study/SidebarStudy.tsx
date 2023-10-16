@@ -1,10 +1,11 @@
 import studyInfo from './studyInfo';
 import StudyItem from './Item/StudyItem';
+import './SidebarStudy.scss';
 
 const SidebarStudy = () => {
   return (
     <div>
-      <ul>
+      <ul className="study__list">
         {studyInfo.map((item) => (
           <StudyItem {...item} key={Math.random().toString()} />
         ))}

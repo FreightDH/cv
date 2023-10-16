@@ -5,8 +5,8 @@
     font-size: 13px;
     font-weight: 500;
 
-    &:not(:last-child) {
-      margin: 0px 0px 15px 0px;
+    @media (max-width: 800px) {
+      flex: 1 1 auto;
     }
   }
 

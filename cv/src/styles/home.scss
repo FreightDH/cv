@@ -9,5 +9,9 @@
     display: flex;
     gap: 20px;
     background-color: #fff;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
   }
 }

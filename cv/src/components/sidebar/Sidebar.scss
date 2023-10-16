@@ -8,4 +8,9 @@
 
   background-color: rgba($color: #e6e8f1, $alpha: 0.2);
   border-radius: 10px;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
