@@ -1,13 +1,13 @@
 import studyInfo from './studyInfo';
 import StudyItem from './Item/StudyItem';
-import './SidebarStudy.scss';
+import styles from './SidebarStudy.module.scss';
 
 const SidebarStudy = () => {
   return (
     <div>
-      <ul className="study__list">
-        {studyInfo.map((study) => (
-          <StudyItem {...study} key={Math.random().toString()} />
+      <ul className={styles.study__list}>
+        {studyInfo.map((study, index) => (
+          <StudyItem {...study} key={index} />
         ))}
       </ul>
     </div>

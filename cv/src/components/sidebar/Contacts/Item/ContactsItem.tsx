@@ -15,9 +15,13 @@ const ContactsItem = ({ img, title, text, link }: Contact) => {
       </div>
       <div className={styles.contacts__content}>
         <p className={styles.contacts__title}>{title}</p>
-        <a href={link} target="_blank" rel="noreferrer">
-          {text}
-        </a>
+        {link ? (
+          <a href={link} target="blank" rel="noreferrer" className={styles.contacts__link}>
+            {text}
+          </a>
+        ) : (
+          <p>{text}</p>
+        )}
       </div>
     </li>
   );

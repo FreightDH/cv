@@ -1,6 +1,10 @@
 import styles from './SkillsItem.module.scss';
 
-const SkillsItem = ({ text }: Record<string, string>) => {
+type Skill = {
+  text: string;
+};
+
+const SkillsItem = ({ text }: Skill) => {
   return <li className={styles.SkillsItem}>{text}</li>;
 };
 

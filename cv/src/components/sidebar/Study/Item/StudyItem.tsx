@@ -1,6 +1,12 @@
 import styles from './StudyItem.module.scss';
 
-const StudyItem = ({ title, text, level }: Record<string, string>) => {
+type Study = {
+  title: string;
+  text: string;
+  level: string;
+};
+
+const StudyItem = ({ title, text, level }: Study) => {
   return (
     <li className={styles.study__item}>
       <p className={styles.study__title}>{title}</p>
