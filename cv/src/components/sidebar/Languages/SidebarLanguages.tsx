@@ -1,11 +1,11 @@
 import LanguagesItem from './Item/LanguagesItem';
 import languagesInfo from './languagesInfo';
-import './SidebarLanguages.scss';
+import styles from './SidebarLanguages.module.scss';
 
 const SidebarLanguages = () => {
   return (
     <div>
-      <ul className="languages__list">
+      <ul className={styles.languages__list}>
         {languagesInfo.map((language) => (
           <LanguagesItem {...language} key={Math.random().toString()} />
         ))}

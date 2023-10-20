@@ -1,14 +1,14 @@
 import ContentTitle from '../Title/ContentTitle';
 import ToolsItem from './Item/ToolsItem';
 import toolsInfo from './toolsInfo';
-import './ToolsSection.scss';
+import styles from './ToolsSection.module.scss';
 
 const Tools = () => {
   return (
     <section className="section">
       <ContentTitle>Tools</ContentTitle>
       <div className="content--content">
-        <ul className="tools__list">
+        <ul className={styles.tools__list}>
           {toolsInfo.map((tool) => (
             <ToolsItem {...tool} key={Math.random().toString()} />
           ))}

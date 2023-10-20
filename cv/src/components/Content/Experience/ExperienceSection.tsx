@@ -1,11 +1,11 @@
 import ContentTitle from '../Title/ContentTitle';
 import ExperienceItem from './Item/ExperienceItem';
 import experienceInfo from './experienceInfo';
-import './ExperienceSection.scss';
+import styles from './ExperienceSection.module.scss';
 
 const Experience = () => {
   return (
-    <section className="section experience">
+    <section className={`section ${styles.Experience}`}>
       <ContentTitle>Experience</ContentTitle>
       <div>
         <ul>
