@@ -39,4 +39,28 @@
     color: #81878c;
     font-size: 12px;
   }
+
+  &__link {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      bottom: -3px;
+      left: 50%;
+
+      background-color: #81878c;
+      transition: all 0.3s ease 0s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
 }
