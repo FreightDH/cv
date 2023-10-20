@@ -1,6 +1,11 @@
 import styles from './LanguagesItem.module.scss';
 
-const LanguagesItem = ({ language, level }: Record<string, string>) => {
+type Language = {
+  language: string;
+  level: string;
+};
+
+const LanguagesItem = ({ language, level }: Language) => {
   return (
     <li className={styles.languages__item}>
       <p className={styles.languages__language}>{language}</p>

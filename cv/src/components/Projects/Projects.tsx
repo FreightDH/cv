@@ -8,8 +8,8 @@ const Projects = () => {
     <div>
       <ContentTitle>Latest projects</ContentTitle>
       <ul className={styles.projects__list}>
-        {projectsInfo.map((project) => (
-          <ProjectsItem {...project} key={Math.random().toString()} />
+        {projectsInfo.map((project, index) => (
+          <ProjectsItem {...project} key={index} />
         ))}
       </ul>
     </div>

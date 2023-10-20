@@ -9,8 +9,8 @@ const Experience = () => {
       <ContentTitle>Experience</ContentTitle>
       <div>
         <ul>
-          {experienceInfo.map((item) => (
-            <ExperienceItem {...item} key={Math.random().toString()} />
+          {experienceInfo.map((item, index) => (
+            <ExperienceItem {...item} key={index} />
           ))}
         </ul>
       </div>

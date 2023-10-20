@@ -9,8 +9,8 @@ const Skills = () => {
       <ContentTitle>Soft skills</ContentTitle>
       <div className={`${styles.skills__content} content--content`}>
         <ul className={styles.skills__list}>
-          {skillsInfo.map((skill) => (
-            <SkillsItem text={skill} key={Math.random().toString()} />
+          {skillsInfo.map((skill, index) => (
+            <SkillsItem text={skill} key={index} />
           ))}
         </ul>
       </div>

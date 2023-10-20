@@ -6,8 +6,8 @@ const SidebarContacts = () => {
   return (
     <div>
       <ul className={style.contacts__list}>
-        {contactsInfo.map((contact) => (
-          <ContactsItem {...contact} key={Math.random().toString()} />
+        {contactsInfo.map((contact, index) => (
+          <ContactsItem {...contact} key={index} />
         ))}
       </ul>
     </div>

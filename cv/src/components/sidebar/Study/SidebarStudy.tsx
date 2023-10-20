@@ -6,8 +6,8 @@ const SidebarStudy = () => {
   return (
     <div>
       <ul className={styles.study__list}>
-        {studyInfo.map((study) => (
-          <StudyItem {...study} key={Math.random().toString()} />
+        {studyInfo.map((study, index) => (
+          <StudyItem {...study} key={index} />
         ))}
       </ul>
     </div>

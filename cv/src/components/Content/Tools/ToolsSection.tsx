@@ -9,8 +9,8 @@ const Tools = () => {
       <ContentTitle>Tools</ContentTitle>
       <div className="content--content">
         <ul className={styles.tools__list}>
-          {toolsInfo.map((tool) => (
-            <ToolsItem {...tool} key={Math.random().toString()} />
+          {toolsInfo.map((tool, index) => (
+            <ToolsItem {...tool} key={index} />
           ))}
         </ul>
       </div>

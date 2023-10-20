@@ -6,8 +6,8 @@ const SidebarLanguages = () => {
   return (
     <div>
       <ul className={styles.languages__list}>
-        {languagesInfo.map((language) => (
-          <LanguagesItem {...language} key={Math.random().toString()} />
+        {languagesInfo.map((language, index) => (
+          <LanguagesItem {...language} key={index} />
         ))}
       </ul>
     </div>

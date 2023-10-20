@@ -1,7 +1,15 @@
 import { iconPath } from '../../../variables';
 import styles from './ProjectItem.module.scss';
 
-const ProjectsItem = ({ stack, title, description, repository, deploy }: Record<string, string>) => {
+type Project = {
+  stack: string;
+  title: string;
+  description: string;
+  repository: string;
+  deploy: string;
+};
+
+const ProjectsItem = ({ stack, title, description, repository, deploy }: Project) => {
   return (
     <li className={styles.projects__project}>
       <div className={styles.project__header}>
