@@ -1,9 +1,10 @@
-import './styles/App.scss';
+import { ReactElement } from 'react';
 import Sidebar from './components/Sidebar/Sidebar';
 import Content from './components/Content/Content';
 import Projects from './components/Projects/Projects';
+import './styles/App.scss';
 
-function App() {
+function App(): ReactElement {
   return (
     <div className="App">
       <main className="page">

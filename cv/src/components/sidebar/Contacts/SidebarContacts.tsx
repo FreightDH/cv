@@ -1,13 +1,15 @@
+import { ReactElement } from 'react';
 import contactsInfo from './contactsInfo';
 import ContactsItem from './Item/ContactsItem';
 import style from './SidebarContacts.module.scss';
 
-const SidebarContacts = () => {
+const SidebarContacts = (): ReactElement => {
   return (
     <div>
+      {}
       <ul className={style.contacts__list}>
-        {contactsInfo.map((contact, index) => (
-          <ContactsItem {...contact} key={index} />
+        {contactsInfo.map(({ id, ...contact }) => (
+          <ContactsItem {...contact} key={id} />
         ))}
       </ul>
     </div>

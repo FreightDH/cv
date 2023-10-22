@@ -1,5 +1,6 @@
 const projectsInfo = [
   {
+    id: 1,
     stack: 'HTML, SCSS, JS',
     title: 'Golden Ring',
     description: 'Website guide to one of the most popular tourist routes "Golden Ring".',
@@ -7,6 +8,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/golden-ring/',
   },
   {
+    id: 2,
     stack: 'HTML, SCSS, JS',
     title: 'Shelter',
     description: 'Website of the shelter for dogs.',
@@ -14,6 +16,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/shelter/shelter/',
   },
   {
+    id: 3,
     stack: 'HTML, SCSS, JS',
     title: 'Plants',
     description: 'Website with garden care services.',
@@ -21,6 +24,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/plants/plants/',
   },
   {
+    id: 4,
     stack: 'HTML, SCSS, JS',
     title: 'Minesweeper',
     description: 'Minesweeper game with original design.',
@@ -28,6 +32,7 @@ const projectsInfo = [
     deploy: 'https://freightdh-minesweeper.netlify.app',
   },
   {
+    id: 5,
     stack: 'HTML, SCSS, JS',
     title: 'Momentum',
     description: 'An analogue of the application with the same name from the Chrome online store.',
@@ -35,6 +40,7 @@ const projectsInfo = [
     deploy: 'https://freightdh-momentum.netlify.app/',
   },
   {
+    id: 6,
     stack: 'HTML, SCSS, JS',
     title: 'Virtual keyboard',
     description: 'A virtual keyboard that supports keyboard or mouse input, two languages.',

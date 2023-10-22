@@ -1,11 +1,12 @@
+import { ReactElement } from 'react';
 import styles from './SkillsItem.module.scss';
 
-type Skill = {
-  text: string;
-};
+interface SkillProps {
+  skill: string;
+}
 
-const SkillsItem = ({ text }: Skill) => {
-  return <li className={styles.SkillsItem}>{text}</li>;
+const SkillsItem: React.FC<SkillProps> = ({ skill }): ReactElement => {
+  return <li className={styles.SkillsItem}>{skill}</li>;
 };
 
 export default SkillsItem;

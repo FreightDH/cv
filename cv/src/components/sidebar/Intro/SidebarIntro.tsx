@@ -1,6 +1,12 @@
+import { ReactElement } from 'react';
 import styles from './SidebarIntro.module.scss';
 
-const SidebarIntro = ({ src, alt }: Record<string, string>) => {
+interface IntroProps {
+  src: string;
+  alt: string;
+}
+
+const SidebarIntro: React.FC<IntroProps> = ({ src, alt }): ReactElement => {
   return (
     <div className={styles.SidebarIntro}>
       <div className={styles.intro__image}>
