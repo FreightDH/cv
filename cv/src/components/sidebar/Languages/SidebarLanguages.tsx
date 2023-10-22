@@ -1,13 +1,14 @@
-import LanguagesItem from './Item/LanguagesItem';
+import { ReactElement } from 'react';
 import languagesInfo from './languagesInfo';
+import LanguagesItem from './Item/LanguagesItem';
 import styles from './SidebarLanguages.module.scss';
 
-const SidebarLanguages = () => {
+const SidebarLanguages = (): ReactElement => {
   return (
     <div>
       <ul className={styles.languages__list}>
-        {languagesInfo.map((language, index) => (
-          <LanguagesItem {...language} key={index} />
+        {languagesInfo.map(({ id, ...language }) => (
+          <LanguagesItem {...language} key={id} />
         ))}
       </ul>
     </div>

@@ -1,15 +1,16 @@
+import { ReactElement } from 'react';
 import { iconPath } from '../../../variables';
 import styles from './ProjectItem.module.scss';
 
-type Project = {
+interface ProjectProps {
   stack: string;
   title: string;
   description: string;
   repository: string;
   deploy: string;
-};
+}
 
-const ProjectsItem = ({ stack, title, description, repository, deploy }: Project) => {
+const ProjectsItem: React.FC<ProjectProps> = ({ stack, title, description, repository, deploy }): ReactElement => {
   return (
     <li className={styles.projects__project}>
       <div className={styles.project__header}>

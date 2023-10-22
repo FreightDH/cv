@@ -1,12 +1,13 @@
+import { ReactElement } from 'react';
 import styles from './StudyItem.module.scss';
 
-type Study = {
+interface StudyProps {
   title: string;
   text: string;
   level: string;
-};
+}
 
-const StudyItem = ({ title, text, level }: Study) => {
+const StudyItem: React.FC<StudyProps> = ({ title, text, level }): ReactElement => {
   return (
     <li className={styles.study__item}>
       <p className={styles.study__title}>{title}</p>

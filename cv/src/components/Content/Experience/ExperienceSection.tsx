@@ -1,16 +1,17 @@
+import { ReactElement } from 'react';
 import ContentTitle from '../Title/ContentTitle';
 import ExperienceItem from './Item/ExperienceItem';
 import experienceInfo from './experienceInfo';
 import styles from './ExperienceSection.module.scss';
 
-const Experience = () => {
+const Experience = (): ReactElement => {
   return (
     <section className={`section ${styles.Experience}`}>
       <ContentTitle>Experience</ContentTitle>
       <div>
         <ul>
-          {experienceInfo.map((item, index) => (
-            <ExperienceItem {...item} key={index} />
+          {experienceInfo.map(({ id, ...item }) => (
+            <ExperienceItem {...item} key={id} />
           ))}
         </ul>
       </div>

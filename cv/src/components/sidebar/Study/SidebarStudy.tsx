@@ -1,13 +1,14 @@
+import { ReactElement } from 'react';
 import studyInfo from './studyInfo';
 import StudyItem from './Item/StudyItem';
 import styles from './SidebarStudy.module.scss';
 
-const SidebarStudy = () => {
+const SidebarStudy = (): ReactElement => {
   return (
     <div>
       <ul className={styles.study__list}>
-        {studyInfo.map((study, index) => (
-          <StudyItem {...study} key={index} />
+        {studyInfo.map(({ id, ...study }) => (
+          <StudyItem {...study} key={id} />
         ))}
       </ul>
     </div>

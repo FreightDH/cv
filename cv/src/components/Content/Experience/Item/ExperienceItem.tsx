@@ -1,15 +1,15 @@
 import styles from './ExperienceItem.module.scss';
 
-type Experience = {
+interface ExperienceProps {
   img: Record<string, string>;
   post: string;
   place: string;
   time: string;
   type: string;
   description: string;
-};
+}
 
-const ExperienceItem = ({ img, post, place, time, type, description }: Experience) => {
+const ExperienceItem: React.FC<ExperienceProps> = ({ img, post, place, time, type, description }) => {
   return (
     <li className={styles.experience__item}>
       <div className={styles.experience__body}>

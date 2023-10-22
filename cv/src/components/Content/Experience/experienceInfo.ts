@@ -2,6 +2,7 @@ import { iconPath } from '../../../variables';
 
 const experienceInfo = [
   {
+    id: 1,
     img: { src: `${iconPath}experience/bstu.png`, alt: 'bstu' },
     post: 'Student',
     place: 'BSTU "Voenmeh"',

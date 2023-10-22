@@ -1,14 +1,15 @@
+import { ReactElement } from 'react';
 import { imgPath } from '../../variables';
-import SidebarContacts from './Contacts/SidebarContacts';
-import Divider from './Divider/Divider';
 import SidebarIntro from './Intro/SidebarIntro';
-import SidebarLanguages from './Languages/SidebarLanguages';
+import Divider from './Divider/Divider';
+import SidebarContacts from './Contacts/SidebarContacts';
 import SidebarStudy from './Study/SidebarStudy';
+import SidebarLanguages from './Languages/SidebarLanguages';
 import styles from './Sidebar.module.scss';
 
 const profileImage = { src: `${imgPath}photo.jpg`, alt: 'my-photo' };
 
-const Sidebar = () => {
+const Sidebar = (): ReactElement => {
   return (
     <aside className={styles.Sidebar}>
       <SidebarIntro {...profileImage} />

@@ -1,7 +1,8 @@
+import { ReactElement } from 'react';
 import ContentTitle from '../Title/ContentTitle';
 import styles from './AboutSection.module.scss';
 
-const About = () => {
+const About = (): ReactElement => {
   return (
     <section className="section">
       <ContentTitle>About me</ContentTitle>

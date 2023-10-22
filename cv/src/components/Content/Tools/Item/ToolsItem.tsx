@@ -1,12 +1,13 @@
+import { ReactElement } from 'react';
 import styles from './ToolsItem.module.scss';
 
-type Tool = {
+interface ToolProps {
   img: Record<string, string>;
   tool: string;
   text: string;
-};
+}
 
-const ToolsItem = ({ img, tool, text }: Tool) => {
+const ToolsItem: React.FC<ToolProps> = ({ img, tool, text }): ReactElement => {
   return (
     <li className={styles.tools__item}>
       <div className="icon">

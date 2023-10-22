@@ -1,13 +1,14 @@
+import { ReactElement } from 'react';
 import styles from './ContactsItem.module.scss';
 
-type Contact = {
+interface ContactProps {
   img: Record<string, string>;
   title: string;
   text: string;
   link?: string;
-};
+}
 
-const ContactsItem = ({ img, title, text, link }: Contact) => {
+const ContactsItem: React.FC<ContactProps> = ({ img, title, text, link }): ReactElement => {
   return (
     <li className={styles.contacts__item}>
       <div className={styles.contacts__icon}>
