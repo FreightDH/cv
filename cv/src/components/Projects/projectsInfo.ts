@@ -47,6 +47,14 @@ const projectsInfo = [
     repository: 'https://github.com/FreightDH/virtual-keyboard',
     deploy: 'https://freightdh.github.io/virtual-keyboard/virtual-keyboard/',
   },
+  {
+    id: 7,
+    stack: 'React, CSS Modules, TS',
+    title: 'Pokemon Cards',
+    description: 'Pokemon API with navigation using React Router, custom pagination and popup pokemon card.',
+    repository: 'https://github.com/FreightDH/rss-react/tree/main',
+    deploy: 'https://freightdh-react-routing.netlify.app',
+  },
 ];
 
 export default projectsInfo;
