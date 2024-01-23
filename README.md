@@ -1,4 +1,4 @@
-# CV
+## CV
 
 ### Tech stack:
 - React
