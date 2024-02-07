@@ -1,1 +1,0 @@
-# RadarFrontendTestTask
