@@ -61,7 +61,7 @@ const projectsInfo = [
     title: 'TODO App',
     description: 'Simple task manager with the ability to add, delete, edit and save your tasks.',
     repository: 'https://github.com/FreightDH/react-projects',
-    deploy: 'https://freightdh.github.io/RadarFrontend/todo-app/',
+    deploy: 'https://freightdh.github.io/react-projects/todo-app/',
   },
   {
     id: 9,
