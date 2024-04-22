@@ -33,9 +33,9 @@ const toolsInfo = [
   },
   {
     id: 8,
-    img: { src: `assets/icons/tools/jquery.svg`, alt: 'jquery' },
-    tool: 'jQuery',
-    text: 'JavaScript library',
+    img: { src: `assets/icons/tools/vue.svg`, alt: 'vue3' },
+    tool: 'Vue3',
+    text: 'JavaScript framework',
   },
   {
     id: 9,
