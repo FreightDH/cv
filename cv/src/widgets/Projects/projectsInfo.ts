@@ -49,7 +49,7 @@ const projectsInfo = [
   },
   {
     id: 7,
-    stack: 'React, CSS Modules, TS',
+    stack: 'React, SCSS, TS',
     title: 'Pokemon Cards',
     description: 'Pokemon API with navigation using React Router, custom pagination and popup pokemon card.',
     repository: 'https://github.com/FreightDH/rss-react/tree/main',
@@ -57,7 +57,7 @@ const projectsInfo = [
   },
   {
     id: 8,
-    stack: 'React, CSS Modules, TS',
+    stack: 'React, Redux Toolkit, SCSS, TS',
     title: 'TODO App',
     description: 'Simple task manager with the ability to add, delete, edit and save your tasks.',
     repository: 'https://github.com/FreightDH/react-projects',
@@ -65,7 +65,7 @@ const projectsInfo = [
   },
   {
     id: 9,
-    stack: 'React, CSS Modules, TS',
+    stack: 'React, SCSS, TS',
     title: 'Posts App',
     description:
       'Posts App with authorization system, pagination and the ability to view, delete and edit posts.',
