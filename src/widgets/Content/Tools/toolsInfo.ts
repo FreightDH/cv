@@ -39,23 +39,23 @@ const toolsInfo = [
   },
   {
     id: 9,
-    img: { src: `assets/icons/tools/vue.svg`, alt: 'vue3' },
-    tool: 'Vue3',
-    text: 'JavaScript framework',
-  },
-  {
-    id: 10,
     img: { src: `assets/icons/tools/c.svg`, alt: 'c' },
     tool: 'C, C++, C#',
     text: 'Programming languages',
   },
   {
-    id: 11,
+    id: 10,
     img: { src: `assets/icons/tools/git.svg`, alt: 'git' },
     tool: 'Git',
     text: 'Version control system',
   },
   { id: 11, img: { src: `assets/icons/tools/figma.svg`, alt: 'figma' }, tool: 'Figma', text: 'Design' },
+  {
+    id: 12,
+    img: { src: `assets/icons/tools/tilda.svg`, alt: 'tilda' },
+    tool: 'Tilda',
+    text: 'Website builder',
+  },
 ];
 
 export default toolsInfo;
