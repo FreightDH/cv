@@ -1,6 +1,15 @@
 const projectsInfo = [
   {
-    id: 1,
+    id: 12,
+    stack: 'HTML, SCSS, JS',
+    title: '7 Months Club',
+    description:
+      'The 7 Months Club is a single product delivery service - a desired offerer to an IT company - in 7 months or less.',
+    repository: 'https://github.com/FreightDH/7-months-club',
+    deploy: 'https://freightdh.github.io/7-months-club/',
+  },
+  {
+    id: 11,
     stack: 'React, Redux Toolkit, SCSS, TS',
     title: 'Pizza Delivery',
     description: 'Food delivery site with full functionality.',
@@ -8,7 +17,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/pizza-delivery/',
   },
   {
-    id: 2,
+    id: 10,
     stack: 'React, SCSS, TS',
     title: 'Posts App',
     description:
@@ -17,7 +26,7 @@ const projectsInfo = [
     deploy: 'https://freightdh-posts-app.netlify.app/',
   },
   {
-    id: 3,
+    id: 9,
     stack: 'React, Redux Toolkit, SCSS, TS',
     title: 'TODO App',
     description: 'Simple task manager with the ability to add, delete, edit and save your tasks.',
@@ -25,7 +34,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/react-projects/todo-app/',
   },
   {
-    id: 4,
+    id: 8,
     stack: 'React, SCSS, TS',
     title: 'Pokemon Cards',
     description: 'Pokemon API with navigation using React Router, custom pagination and popup pokemon card.',
@@ -33,7 +42,7 @@ const projectsInfo = [
     deploy: 'https://freightdh-react-routing.netlify.app',
   },
   {
-    id: 5,
+    id: 7,
     stack: 'HTML, SCSS, JS',
     title: 'Golden Ring',
     description: 'Website guide to one of the most popular tourist routes "Golden Ring".',
@@ -49,7 +58,7 @@ const projectsInfo = [
     deploy: 'https://freightdh-minesweeper.netlify.app',
   },
   {
-    id: 7,
+    id: 5,
     stack: 'HTML, SCSS, JS',
     title: 'Virtual keyboard',
     description: 'A virtual keyboard that supports keyboard or mouse input, two languages.',
@@ -57,7 +66,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/virtual-keyboard/virtual-keyboard/',
   },
   {
-    id: 8,
+    id: 4,
     stack: 'HTML, SCSS, JS',
     title: 'Hangman Game',
     description: 'Guessing game with JavaScript questions and responsive design.',
@@ -65,7 +74,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/hangman/',
   },
   {
-    id: 9,
+    id: 3,
     stack: 'HTML, SCSS, JS',
     title: 'Shelter',
     description: 'Website of the shelter for dogs.',
@@ -73,7 +82,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/shelter/shelter/',
   },
   {
-    id: 10,
+    id: 2,
     stack: 'HTML, SCSS, JS',
     title: 'Plants',
     description: 'Website with garden care services.',
@@ -81,7 +90,7 @@ const projectsInfo = [
     deploy: 'https://freightdh.github.io/plants/plants/',
   },
   {
-    id: 11,
+    id: 1,
     stack: 'HTML, SCSS, JS',
     title: 'Momentum',
     description: 'An analogue of the application with the same name from the Chrome extensions store.',
