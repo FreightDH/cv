@@ -1,15 +1,18 @@
 import { ReactElement } from 'react';
 
-import toolsInfo from './toolsInfo';
 import { Title } from 'shared';
-import ToolsItem from './Item/ToolsItem';
+import { useLanguage } from 'shared/contexts/LanguageContext';
 
+import ToolsItem from './Item/ToolsItem';
+import toolsInfo from './toolsInfo';
 import cl from './ToolsSection.module.scss';
 
 const Tools = (): ReactElement => {
+  const { currentLanguage } = useLanguage();
+
   return (
     <section className="section">
-      <Title>Tools</Title>
+      <Title>{currentLanguage === 'eng' ? 'Tools' : 'Технологии'}</Title>
       <div className="content--content">
         <ul className={cl.tools__list}>
           {toolsInfo.map(({ id, ...tool }) => (

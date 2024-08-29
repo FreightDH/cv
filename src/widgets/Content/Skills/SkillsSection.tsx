@@ -1,20 +1,23 @@
 import { ReactElement } from 'react';
 
-import skillsInfo from './skillsInfo';
 import { Title } from 'shared';
-import SkillsItem from './Item/SkillsItem';
+import { useLanguage } from 'shared/contexts/LanguageContext';
 
+import SkillsItem from './Item/SkillsItem';
+import skillsInfo from './skillsInfo';
 import cl from './SkillsSection.module.scss';
 
 const Skills = (): ReactElement => {
+  const { currentLanguage } = useLanguage();
+
   return (
     <section className="section">
       <Title>Soft skills</Title>
       <div className={`${cl.skills__content} content--content`}>
         <ul className={cl.skills__list}>
-          {skillsInfo.map(({ id, ...skill }) => (
-            <SkillsItem {...skill} key={id} />
-          ))}
+          {currentLanguage === 'eng'
+            ? skillsInfo['eng'].map(({ id, ...skill }) => <SkillsItem {...skill} key={id} />)
+            : skillsInfo['ru'].map(({ id, ...skill }) => <SkillsItem {...skill} key={id} />)}
         </ul>
       </div>
     </section>

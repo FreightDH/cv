@@ -1,20 +1,23 @@
 import { ReactElement } from 'react';
 
-import experienceInfo from './experienceInfo';
 import { Title } from 'shared';
-import ExperienceItem from './Item/ExperienceItem';
+import { useLanguage } from 'shared/contexts/LanguageContext';
 
+import ExperienceItem from './Item/ExperienceItem';
+import experienceInfo from './experienceInfo';
 import cl from './ExperienceSection.module.scss';
 
 const Experience = (): ReactElement => {
+  const { currentLanguage } = useLanguage();
+
   return (
     <section className={`section ${cl.experience}`}>
-      <Title>Experience</Title>
+      <Title>{currentLanguage === 'eng' ? 'Experience' : 'Опыт работы'}</Title>
       <div>
         <ul>
-          {experienceInfo.map(({ id, ...item }) => (
-            <ExperienceItem {...item} key={id} />
-          ))}
+          {currentLanguage === 'eng'
+            ? experienceInfo['eng'].map(({ id, ...item }) => <ExperienceItem {...item} key={id} />)
+            : experienceInfo['ru'].map(({ id, ...item }) => <ExperienceItem {...item} key={id} />)}
         </ul>
       </div>
     </section>
