@@ -1,15 +1,20 @@
 import { ReactElement } from 'react';
-import studyInfo from './studyInfo';
+
+import { useLanguage } from 'shared/contexts/LanguageContext';
+
 import StudyItem from './Item/StudyItem';
+import studyInfo from './studyInfo';
 import cl from './SidebarStudy.module.scss';
 
 const SidebarStudy = (): ReactElement => {
+  const { currentLanguage } = useLanguage();
+
   return (
     <div>
       <ul className={cl.study__list}>
-        {studyInfo.map(({ id, ...study }) => (
-          <StudyItem {...study} key={id} />
-        ))}
+        {currentLanguage === 'eng'
+          ? studyInfo['eng'].map(({ id, ...study }) => <StudyItem {...study} key={id} />)
+          : studyInfo['ru'].map(({ id, ...study }) => <StudyItem {...study} key={id} />)}
       </ul>
     </div>
   );
