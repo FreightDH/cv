@@ -1,0 +1,1 @@
+export { LanguageTrigger } from './LanguageTrigger';
