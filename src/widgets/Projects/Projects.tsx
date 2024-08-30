@@ -1,19 +1,21 @@
 import { ReactElement } from 'react';
 
-import projectsInfo from './projectsInfo';
-import { Title } from 'shared';
-import ProjectsItem from './Item/ProjectItem';
+import { Title } from 'shared/UI/Title';
+import { useLanguage } from 'shared/lib/contexts/LanguageContext';
 
+import projectsInfo from './projectsInfo';
+import ProjectsItem from './Item/ProjectItem';
 import cl from './Projects.module.scss';
 
 const Projects = (): ReactElement => {
+  const { currentLanguage } = useLanguage();
   return (
     <div>
-      <Title>Latest projects</Title>
+      <Title>{currentLanguage === 'eng' ? 'Latest projects' : 'Последние проекты'}</Title>
       <ul className={cl.projects__list}>
-        {projectsInfo.map(({ id, ...project }) => (
-          <ProjectsItem {...project} key={id} />
-        ))}
+        {currentLanguage === 'eng'
+          ? projectsInfo['eng'].map(({ id, ...project }) => <ProjectsItem {...project} key={id} />)
+          : projectsInfo['ru'].map(({ id, ...project }) => <ProjectsItem {...project} key={id} />)}
       </ul>
     </div>
   );

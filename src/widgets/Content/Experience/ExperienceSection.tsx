@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
-import { Title } from 'shared';
-import { useLanguage } from 'shared/contexts/LanguageContext';
+import { Title } from 'shared/UI/Title';
+import { useLanguage } from 'shared/lib/contexts/LanguageContext';
 
 import ExperienceItem from './Item/ExperienceItem';
 import experienceInfo from './experienceInfo';

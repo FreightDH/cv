@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
 import styles from './SidebarIntro.module.scss';
-import { useLanguage } from 'shared/contexts/LanguageContext';
+import { useLanguage } from 'shared/lib/contexts/LanguageContext';
 
 const SidebarIntro = (): ReactElement => {
   const { currentLanguage } = useLanguage();

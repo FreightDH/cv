@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import { useLanguage } from 'shared/contexts/LanguageContext';
+import { useLanguage } from 'shared/lib/contexts/LanguageContext';
 
 import StudyItem from './Item/StudyItem';
 import studyInfo from './studyInfo';
