@@ -1,6 +1,14 @@
 const projectsInfo = {
   eng: [
     {
+      id: 2,
+      stack: 'React, SCSS, JS',
+      title: 'Shift_',
+      description: 'Shift_ - fast and confident entry into IT here.',
+      repository: 'https://github.com/FreightDH/shift_',
+      deploy: 'https://freightdh-shift.netlify.app/',
+    },
+    {
       id: 12,
       stack: 'HTML, SCSS, JS',
       title: '7 Months Club',
@@ -84,14 +92,6 @@ const projectsInfo = {
       deploy: 'https://freightdh.github.io/shelter/shelter/',
     },
     {
-      id: 2,
-      stack: 'HTML, SCSS, JS',
-      title: 'Plants',
-      description: 'Website with garden care services.',
-      repository: 'https://github.com/FreightDH/plants',
-      deploy: 'https://freightdh.github.io/plants/plants/',
-    },
-    {
       id: 1,
       stack: 'HTML, SCSS, JS',
       title: 'Momentum',
@@ -101,6 +101,14 @@ const projectsInfo = {
     },
   ],
   ru: [
+    {
+      id: 2,
+      stack: 'React, SCSS, JS',
+      title: 'Шифт_',
+      description: 'Шифт_ - быстрый и уверенный вход в IT тут.',
+      repository: 'https://github.com/FreightDH/shift_',
+      deploy: 'https://freightdh-shift.netlify.app/',
+    },
     {
       id: 12,
       stack: 'HTML, SCSS, JS',
@@ -183,14 +191,6 @@ const projectsInfo = {
       description: 'Сайт приюта для собак.',
       repository: 'https://github.com/FreightDH/shelter',
       deploy: 'https://freightdh.github.io/shelter/shelter/',
-    },
-    {
-      id: 2,
-      stack: 'HTML, SCSS, JS',
-      title: 'Plants',
-      description: 'Сайт с услугами по уходу за садом.',
-      repository: 'https://github.com/FreightDH/plants',
-      deploy: 'https://freightdh.github.io/plants/plants/',
     },
     {
       id: 1,
