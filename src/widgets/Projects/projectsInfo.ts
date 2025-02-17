@@ -1,6 +1,14 @@
 const projectsInfo = {
   eng: [
     {
+      id: 3,
+      stack: 'HTML, CSS, JS, PHP',
+      title: 'ООО «ЛМК-ИНЖИНИРИНГ»',
+      description: 'Reliable solution for oil and gas grade pipes',
+      repository: '',
+      deploy: 'https://lmk-engineering.ru/',
+    },
+    {
       id: 2,
       stack: 'React, SCSS, JS',
       title: 'Shift_',
@@ -84,14 +92,6 @@ const projectsInfo = {
       deploy: 'https://freightdh.github.io/hangman/',
     },
     {
-      id: 3,
-      stack: 'HTML, SCSS, JS',
-      title: 'Shelter',
-      description: 'Website of the shelter for dogs.',
-      repository: 'https://github.com/FreightDH/shelter',
-      deploy: 'https://freightdh.github.io/shelter/shelter/',
-    },
-    {
       id: 1,
       stack: 'HTML, SCSS, JS',
       title: 'Momentum',
@@ -101,6 +101,14 @@ const projectsInfo = {
     },
   ],
   ru: [
+    {
+      id: 3,
+      stack: 'HTML, CSS, JS, PHP',
+      title: 'ООО "ЛМК-ИНЖИНИРИНГ"',
+      description: 'Надежное решение для труб нефтегазового сортамента',
+      repository: '',
+      deploy: 'https://lmk-engineering.ru/',
+    },
     {
       id: 2,
       stack: 'React, SCSS, JS',
@@ -183,14 +191,6 @@ const projectsInfo = {
       description: 'Игра-угадайка с вопросами по JavaScript и отзывчивым дизайном.',
       repository: 'https://github.com/FreightDH/hangman',
       deploy: 'https://freightdh.github.io/hangman/',
-    },
-    {
-      id: 3,
-      stack: 'HTML, SCSS, JS',
-      title: 'Shelter',
-      description: 'Сайт приюта для собак.',
-      repository: 'https://github.com/FreightDH/shelter',
-      deploy: 'https://freightdh.github.io/shelter/shelter/',
     },
     {
       id: 1,

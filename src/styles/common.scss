@@ -43,6 +43,7 @@
   &.exp {
     img {
       object-fit: contain;
+      border-radius: 10px;
     }
 
     @media (max-width: 479.98px) {

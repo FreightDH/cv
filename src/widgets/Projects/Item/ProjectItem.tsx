@@ -21,9 +21,11 @@ const ProjectsItem: React.FC<ProjectProps> = ({
       <div className={cl.project__header}>
         <div className={cl.header__stack}>{stack}</div>
         <div className={cl.header__links}>
-          <a href={repository} target="_blank" rel="noreferrer">
-            <img src="assets/icons/projects/github.svg" alt="github-icon" />
-          </a>
+          {repository && (
+            <a href={repository} target="_blank" rel="noreferrer">
+              <img src="assets/icons/projects/github.svg" alt="github-icon" />
+            </a>
+          )}
           <a href={deploy} target="_blank" rel="noreferrer">
             <img src="assets/icons/projects/browser.svg" alt="browser-icon" />
           </a>

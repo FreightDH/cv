@@ -9,6 +9,7 @@ import cl from './ExperienceSection.module.scss';
 
 const Experience = (): ReactElement => {
   const { currentLanguage } = useLanguage();
+  console.log(experienceInfo);
 
   return (
     <section className={`section ${cl.experience}`}>
