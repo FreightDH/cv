@@ -12,19 +12,45 @@ const About = (): ReactElement => {
     <section className="section">
       <Title>{currentLanguage === 'eng' ? 'About me' : 'Обо мне'}</Title>
       <div className="content--content">
-        <p className={cl.about__text}>
-          {currentLanguage === 'eng'
-            ? `I am currently studying in the fourth year of BSTU “Voenmeh” in St. Petersburg at the faculty of
-          Software Development. I started learning web development in the summer of 2022. During this time I
-          have passed a lot of courses, had experience in freelance. My goal is to become an experienced and
-          in-demand developer, so I try to learn new things in web development almost all my free time from my
-          university studies.`
-            : `В настоящее время являюсь студентом четвертого курса БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова в 
-          Санкт-Петербурге. Обучаюсь на направлении "Программная инженерия". Начал изучать веб-разработку летом 
-          2022 года. За это время прошел множество курсов, был опыт работы на фрилансе. Моя цель - стать опытным 
-          и востребованным разработчиком, поэтому я стараюсь изучать новое в сфере веб-разработки почти все свободное 
-          от учебы в университете время.`}
-        </p>
+        {currentLanguage === 'eng' ? (
+          <>
+            <p className={cl.about__text}>
+              More than 3 years of web development experience, 1.5 years of which is commercial
+            </p>
+            <br />
+            <p className={cl.about__text}>
+              I am constantly improving my knowledge and skills in the field of development, not afraid of
+              difficulties and able to adapt quickly to new technologies
+            </p>
+            <br />
+            <p className={cl.about__text}>
+              My specialization is creating web applications (websites) using React and TypeScript. I have
+              experience working with REST API, CI/CD, and integration of third-party services
+            </p>
+            <br />
+            <p className={cl.about__text}>
+              I strive to create user-friendly and reliable solutions that benefit users and businesses
+            </p>
+          </>
+        ) : (
+          <>
+            <p className={cl.about__text}>Опыт веб-разработки более 3 лет, из них 1,5 года — коммерческий</p>
+            <br />
+            <p className={cl.about__text}>
+              Постоянно совершенствую свои знания и навыки в сфере разработки, не боюсь трудностей и умею
+              быстро адаптироваться к новым технологиям
+            </p>
+            <br />
+            <p className={cl.about__text}>
+              Специализируюсь на создании веб-приложений (сайтов) с использованием React и TypeScript, имею
+              опыт работы с REST API, CI/CD, интеграцией сторонних сервисов
+            </p>
+            <br />
+            <p className={cl.about__text}>
+              Стремлюсь к созданию удобных и надёжных решений, которые приносят пользу пользователям и бизнесу
+            </p>
+          </>
+        )}
       </div>
     </section>
   );
